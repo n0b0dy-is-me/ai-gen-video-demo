@@ -26,7 +26,7 @@
    * **音樂處理**：FFmpeg 自動加入音訊 `afade` 效果（前 1.5 秒淡入，最後 2.5 秒淡出）。
 
 ### 步驟 3：同步生成 HTML 簡報頁面 (Generate HTML Showcase)
-1. 產生與影片對應的 16:9 響應式 HTML5 頁面 `index.html`。
+1. 產生與影片對應的 16:9 響應式 HTML5 頁面 `hsinchu_beauty.html`。
 2. 包含 CSS 轉場 (`transition: opacity 1.2s`) 與 Ken Burns 縮放 (`scale(1.02) -> scale(1.12)`).
 3. 提供 `<audio>` 播放器與 MediaRecorder 備用按鈕。
 

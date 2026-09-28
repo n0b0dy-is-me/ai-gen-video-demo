@@ -81,7 +81,7 @@
 ```text
 /tmp/beauty_of_hsinchu/
 ├── hsinchu_beauty.mp4  # 60 秒 1080p 高畫質 16:9 影片檔
-├── index.html          # 互動式網頁簡報檔
+├── hsinchu_beauty.html          # 互動式網頁簡報檔
 ├── SOURCES.md          # 本檔案 (媒體來源與授權說明)
 └── photos/             # 高解析度照片與音樂檔
     ├── east_gate.jpg
