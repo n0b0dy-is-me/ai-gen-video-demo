@@ -1,12 +1,12 @@
 # 🤖 AI Agent 影音剪輯標準作業指南 (AI Agent Execution Playbook)
 
-本指南旨在供任何接續處理影音生成任務的 **AI Agent**（如 Antigravity, Claude, ChatGPT, Cursor 等）快速閱讀，掌握自動化圖片蒐集、影音渲染與頁面生成的完整 SOP。
+本指南旨在供任何接續處理影音生成任務的 **AI Agent**（如 Antigravity, Claude, ChatGPT, Cursor 等）快速閱讀，掌握自動化圖片蒐集、影音渲染與出處紀錄的完整 SOP。
 
 ---
 
 ## ⚡ 核心執行流程 (Standard Operating Procedure)
 
-當使用者發出「幫我蒐集某主題圖片並製作影片」的需求時，請依照以下 4 步驟執行：
+當使用者發出「幫我蒐集某主題圖片並製作影片」的需求時，請依照以下 3 步驟執行：
 
 ### 步驟 1：素材蒐集 (Image & Audio Collection)
 1. 建立目標素材資料夾：`mkdir -p assets/`
@@ -25,12 +25,7 @@
    * **文字與排版**：使用系統內建 `NotoSerifCJK-Bold.ttc` 與 `NotoSansCJK-Regular.ttc` 繪製半透明玻璃擬態字幕卡。
    * **音樂處理**：FFmpeg 自動加入音訊 `afade` 效果（前 1.5 秒淡入，最後 2.5 秒淡出）。
 
-### 步驟 3：同步生成 HTML 簡報頁面 (Generate HTML Showcase)
-1. 產生與影片對應的 16:9 響應式 HTML5 頁面 `hsinchu_beauty.html`。
-2. 包含 CSS 轉場 (`transition: opacity 1.2s`) 與 Ken Burns 縮放 (`scale(1.02) -> scale(1.12)`).
-3. 提供 `<audio>` 播放器與 MediaRecorder 備用按鈕。
-
-### 步驟 4：出處紀錄 (Attribution & Documentation)
+### 步驟 3：出處紀錄 (Attribution & Documentation)
 1. 建立 `SOURCES.md` 紀錄所有素材的原始連結與創用 CC 授權條款。
 2. 建立 `TEMPLATE.md` 與 `README.md` 交付使用者。
 
