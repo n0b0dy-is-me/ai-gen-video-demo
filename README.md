@@ -13,12 +13,12 @@
 本專案所展現的 AI 自動化影音剪輯流程，特別適用於以下場景：
 
 1. **學校課程與教學簡報（非以訓練剪輯技術為目的）**：
-   * 適用於地理、歷史、社會、人文藝術、通識課程或語言學習等作業與報告。
-   * **優勢**：當課程的核心目標是「主題內容表達、景點人文介紹或視覺導覽」，而非要求學生學習 Premiere/Final Cut 等專業剪輯軟體操作時，透過此 AI 工具可大幅降低影音製作門檻，讓學生專注於知識內容本身。
+   * 適用於地理、歷史、社會、人文藝術、通識課程或語言學習等作業與簡報。
+   * **效益**：當課程目標是「主題內容表達、景點人文介紹或視覺導覽」，而非要求學生學習剪輯軟體操作技術時，可大幅降低影音製作門檻，讓學生專注於內容研究與報告品質本身。
 
 2. **輕量級商業與行銷推廣需求**：
-   * 適用於社群小編、小微企業、自媒體創作者、房產展示、旅遊推廣或產品相片展示。
-   * **優勢**：無需耗費高額預算聘請剪輯團隊或購買專業軟體，即可快速生成質感極佳、動態流暢且具備背景音樂與字幕的 1080p 形象短片。
+   * 適用於社群小編、小微企業、自媒體創作者、房產建案展示、旅遊推廣或產品圖片展示。
+   * **效益**：無需耗費高額預算聘請剪輯團隊或購買專業軟體，即可快速生成動態流暢且具備背景音樂與字幕的高質感 1080p 形象短片。
 
 ---
 
@@ -31,7 +31,7 @@
 3. **中文美學與玻璃擬態 (Glassmorphism & Typography)**：
    * 自動整合 Noto Serif / Sans CJK 字型，搭配淡黑半透明玻璃擬態字幕卡與金色視覺線條。
 4. **雙重交付成果 (Dual Output)**：
-   * **MP4 影片檔**：隨處可播放的 1 分鐘高畫質影片。
+   * **MP4 影片檔**：位於 `gh-pages` 分支，避免 `main` 主分支儲存大型二進位檔。
    * **HTML5 網頁**：可以在任何現代瀏覽器開啟並互動展演的響應式網頁。
 
 ---
@@ -39,14 +39,13 @@
 ## 📁 專案目錄結構 (Repository Structure)
 
 ```text
-beauty_of_hsinchu/
-├── README.md               # 專案介紹、適用場景與執行說明
+beauty_of_hsinchu/ (main 分支 - 輕量化無大型影片檔)
+├── README.md               # 專案介紹、適用場景與 Antigravity 安裝說明
 ├── TEMPLATE.md             # 使用者要求 AI 剪輯類似影片的需求模板
 ├── SOURCES.md              # 圖片與音樂版權/出處標示
 ├── CHAT_HISTORY.md         # 使用者與 AI 互動的完整對話歷程紀錄
 ├── LICENSE                 # MIT 開源授權條款
 ├── index.html              # 互動式 HTML5 網頁展演檔
-├── hsinchu_beauty.mp4      # 最終生成的 1080p 60秒 MP4 影片
 ├── photos/                 # 高解析度素材與背景音樂 (bgm.mp3)
 │   ├── east_gate.jpg
 │   ├── xiangshan_wetland.jpg
@@ -63,6 +62,8 @@ beauty_of_hsinchu/
     └── README.md           # AI Agent 操作指南 (Workflow Guide for AI)
 ```
 
+> 💡 **影片媒體檔位置**：高畫質影片檔 `hsinchu_beauty.mp4` 已獨立整理至 `gh-pages` 分支中，供 GitHub Pages 線上播放與下載，避免 clone `main` 分支時下載不必要的大型二進位檔案。
+
 ---
 
 ## 💬 對話歷史紀錄 (Chat History)
@@ -71,21 +72,23 @@ beauty_of_hsinchu/
 
 ---
 
-## 🚀 如何重新渲染或自訂影片 (How to Run / Reproduce)
+## 🚀 如何安裝與使用 Google Antigravity (Installation & Usage)
 
-### 環境需求 (Prerequisites)
-* Python 3.8+
-* `ffmpeg` (已安裝並加入系統 PATH)
-* Python 套件：`Pillow` (`pip install Pillow`)
+本專案係由 **Google Antigravity (AGY)** AI Agent 自動化協作完成。若您也想使用 Antigravity 請 AI 幫您自動化剪輯影片或開發專案，請參考以下說明：
 
-### 執行渲染
-在 Terminal 中執行以下指令即可重新渲染影片：
+### 1. 官方資源與下載連結 (Official Links)
+* 🌐 **Google Antigravity 官方網站**：[https://antigravity.google](https://antigravity.google)
+* 📖 **官方說明文件與 API 手冊**：[https://antigravity.google/docs](https://antigravity.google/docs)
+* 💻 **Antigravity CLI 命令列工具**：[https://antigravity.google/docs/cli/reference](https://antigravity.google/docs/cli/reference)
 
-```bash
-python3 scripts/render_video.py
-```
-
-影片將自動輸出至 `hsinchu_beauty.mp4`！
+### 2. 快速開始 (Quick Start)
+1. 安裝 Google Antigravity CLI 工具（`agy`）：
+   * 請至 [Antigravity 官網](https://antigravity.google) 下載對應作業系統（Linux / macOS / Windows）的 CLI 或 IDE。
+2. 啟動 Antigravity：
+   * 在 Terminal 中執行 `agy` 命令即可啟動 Agent 對話環境。
+3. 開始自動化剪輯：
+   * 複製（`git clone`）本儲存庫，在專案目錄下開啟 `agy`。
+   * 參考 [TEMPLATE.md](TEMPLATE.md) 填寫您的需求並發送給 AI，AI 助手即會自動執行素材蒐集、影片渲染與網頁生成全套流程！
 
 ---
 
