@@ -71,7 +71,7 @@ beauty_of_hsinchu/ (main 分支 - 輕量化無大型影片檔)
 ├── README.md               # 專案介紹、適用場景與新手操作說明
 ├── TEMPLATE.md             # 使用者要求 AI 剪輯類似影片的需求模板
 ├── SOURCES.md              # 圖片與音樂版權/出處標示
-├── CHAT_HISTORY.md         # 使用者與 AI 互動的完整對話歷程紀錄
+├── TECHNICAL_DETAILS.md    # 核心技術架構、演算法公式與景點章節規劃規格書
 ├── LICENSE                 # MIT 開源授權條款
 ├── assets/                 # 高解析度素材與背景音樂 (bgm.mp3)
 │   ├── east_gate.jpg
@@ -93,9 +93,10 @@ beauty_of_hsinchu/ (main 分支 - 輕量化無大型影片檔)
 
 ---
 
-## 💬 對話歷史紀錄 (Chat History)
+## 🛠️ 技術細節與影片章節規劃 (Technical Details & Specs)
 
-您可以在 [CHAT_HISTORY.md](CHAT_HISTORY.md) 查閱使用者與 AI 助手從最初的需求討論、方案評估、素材下載到影片生成與專案整理的全過程對話紀錄。
+關於本專案的 **技術選型原因（為什麼不用瀏覽器錄影）、依賴環境、影像演算法公式（Ken Burns / 玻璃擬態）、音訊處理，以及完整的 8 大新竹景點時間軸規劃表**，請參閱詳細規格書：
+👉 **[TECHNICAL_DETAILS.md (技術架構與影片製作規劃規格書)](TECHNICAL_DETAILS.md)**
 
 ---
 
