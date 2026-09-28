@@ -2,7 +2,7 @@
 """
 AI Agent Automated Video Generator Script
 ------------------------------------------
-Renders a 1080p landscape slideshow video from a directory of photos,
+Renders a 1080p landscape slideshow video from a directory of assets,
 with Ken Burns pan/zoom, CJK typography overlays, crossfade transitions,
 and AAC background music with volume fading.
 """
@@ -20,7 +20,7 @@ DURATION_TOTAL = 60.0
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
-PHOTOS_DIR = os.path.join(PROJECT_DIR, 'photos')
+PHOTOS_DIR = os.path.join(PROJECT_DIR, 'assets')
 OUTPUT_VIDEO = os.path.join(PROJECT_DIR, 'hsinchu_beauty.mp4')
 BGM_PATH = os.path.join(PHOTOS_DIR, 'bgm.mp3')
 

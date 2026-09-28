@@ -6,7 +6,8 @@
 
 本專案為 **AI Agent 影音剪輯與自動化生成能力** 的實驗與測試範例。展示 AI 如何從網路搜尋開放授權圖片、自動處理音訊與視覺動態、設計中文美學字型與玻璃擬態字幕卡，並最終渲染出完全零掉幀的高畫質 1080p MP4 影片與互動式網頁。
 
-👉 🍿 **[▶ 點此線上觀看 60 秒高畫質影片 (hsinchu_beauty.mp4)](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)**
+👉 🍿 **[▶ 點此線上觀看 60 秒高畫質影片 (hsinchu_beauty.mp4)](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)**  
+👉 🌐 **[▶ 點此開啟線上互動式網頁展演 (hsinchu_beauty.html)](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.html)**
 
 ---
 
@@ -32,9 +33,9 @@
    * 為每張靜態照片動態計算縮放（Zoom）與平移（Pan），讓風景照呈現如紀錄片般流暢的動態視野。
 3. **中文美學與玻璃擬態 (Glassmorphism & Typography)**：
    * 自動整合 Noto Serif / Sans CJK 字型，搭配淡黑半透明玻璃擬態字幕卡與金色視覺線條。
-4. **雙重交付成果 (Dual Output)**：
-   * **[線上影片播放](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)**：隨點隨看 1 分鐘高畫質影片。
-   * **網頁展演檔**：可以在任何現代瀏覽器開啟並互動展演的 `hsinchu_beauty.html`。
+4. **雙重線上展示成果 (Dual Online Output)**：
+   * 🍿 **[線上影片播放 (MP4)](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)**：隨點隨看 1 分鐘高畫質影片。
+   * 🌐 **[線上網頁展演 (HTML)](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.html)**：在現代瀏覽器開啟並互動展演的響應式網頁。
 
 ---
 
@@ -75,7 +76,7 @@ beauty_of_hsinchu/ (main 分支 - 輕量化無大型影片檔)
 ├── CHAT_HISTORY.md         # 使用者與 AI 互動的完整對話歷程紀錄
 ├── LICENSE                 # MIT 開源授權條款
 ├── hsinchu_beauty.html     # 互動式 HTML5 網頁展演檔
-├── photos/                 # 高解析度素材與背景音樂 (bgm.mp3)
+├── assets/                 # 高解析度素材與背景音樂 (bgm.mp3)
 │   ├── east_gate.jpg
 │   ├── xiangshan_wetland.jpg
 │   ├── smangus.jpg
