@@ -4,7 +4,9 @@
 [![Resolution: 1080p](https://img.shields.io/badge/Resolution-1080p_16%3A9-blue.svg)]()
 [![FPS: 30](https://img.shields.io/badge/FPS-30_Zero_Frame_Drop-green.svg)]()
 
-本專案為 **AI Agent 影音剪輯與自動化生成能力** 的實驗與測試範例。展示 AI 如何從網路搜尋開放授權圖片、自動處理音訊與視覺動態、設計中文美學字型與玻璃擬態字幕卡，並最終渲染出完全零掉幀的高畫質 1080p MP4 影片與互動式 HTML5 簡報。
+本專案為 **AI Agent 影音剪輯與自動化生成能力** 的實驗與測試範例。展示 AI 如何從網路搜尋開放授權圖片、自動處理音訊與視覺動態、設計中文美學字型與玻璃擬態字幕卡，並最終渲染出完全零掉幀的高畫質 1080p MP4 影片與互動式網頁。
+
+👉 🍿 **[▶ 點此線上觀看 60 秒高畫質影片 (hsinchu_beauty.mp4)](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)**
 
 ---
 
@@ -31,8 +33,35 @@
 3. **中文美學與玻璃擬態 (Glassmorphism & Typography)**：
    * 自動整合 Noto Serif / Sans CJK 字型，搭配淡黑半透明玻璃擬態字幕卡與金色視覺線條。
 4. **雙重交付成果 (Dual Output)**：
-   * **MP4 影片檔**：位於 `gh-pages` 分支，避免 `main` 主分支儲存大型二進位檔。
-   * **HTML5 網頁**：可以在任何現代瀏覽器開啟並互動展演的響應式網頁。
+   * **[線上影片播放](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)**：隨點隨看 1 分鐘高畫質影片。
+   * **網頁展演檔**：可以在任何現代瀏覽器開啟並互動展演的 `hsinchu_beauty.html`。
+
+---
+
+## 🚀 如何請 AI 幫您自動剪輯影片？(新手萌新零基礎指南)
+
+不懂寫程式？不會用複雜的剪輯軟體？別擔心！本影片完全是由 **Google Antigravity** AI 助手全自動剪輯完成的。您只需要會「打字對話」，就能請 AI 幫您做一部一模一樣的精美影片！
+
+### 步驟 1：下載安裝 AI 助手軟體
+1. 點擊前往 🌐 **[Google Antigravity 官方網站](https://antigravity.google)**。
+2. 像下載一般電腦軟體（如 LINE 或 Chrome）一樣，點選下載並安裝適用於您電腦（Windows / Mac）的 Antigravity 應用程式。
+
+### 步驟 2：開啟對話視窗
+1. 安裝完成後開啟 Antigravity 軟體。
+2. 您會看到一個非常親切的 AI 聊天對話視窗。
+
+### 步驟 3：複製範本，把需求告訴 AI
+1. 開啟本專案的 **[TEMPLATE.md (需求填寫範本)](TEMPLATE.md)**。
+2. 複製裡面的表格內容，改成您想做的影片主題（例如：想做「墾丁海灘風光」、「公司新產品發表」或「旅遊紀錄」）。
+3. 將這段文字貼到 Antigravity 聊天視窗中傳送給 AI！
+
+### 步驟 4：坐等影片完成！
+* AI 助手接到任務後，會自動在背景幫您：
+  * 搜尋高解析度美麗照片
+  * 搭配優雅的背景音樂
+  * 加上漂亮的中文標題與字幕
+  * 自動剪輯並輸出成高畫質影片檔案
+* 您完全不需要安裝複雜的剪輯工具，也不需要輸入任何艱深的電腦指令，一切交給 AI 全自動處理即可！
 
 ---
 
@@ -40,12 +69,12 @@
 
 ```text
 beauty_of_hsinchu/ (main 分支 - 輕量化無大型影片檔)
-├── README.md               # 專案介紹、適用場景與 Antigravity 安裝說明
+├── README.md               # 專案介紹、適用場景與新手操作說明
 ├── TEMPLATE.md             # 使用者要求 AI 剪輯類似影片的需求模板
 ├── SOURCES.md              # 圖片與音樂版權/出處標示
 ├── CHAT_HISTORY.md         # 使用者與 AI 互動的完整對話歷程紀錄
 ├── LICENSE                 # MIT 開源授權條款
-├── index.html              # 互動式 HTML5 網頁展演檔
+├── hsinchu_beauty.html     # 互動式 HTML5 網頁展演檔
 ├── photos/                 # 高解析度素材與背景音樂 (bgm.mp3)
 │   ├── east_gate.jpg
 │   ├── xiangshan_wetland.jpg
@@ -62,33 +91,13 @@ beauty_of_hsinchu/ (main 分支 - 輕量化無大型影片檔)
     └── README.md           # AI Agent 操作指南 (Workflow Guide for AI)
 ```
 
-> 💡 **影片媒體檔位置**：高畫質影片檔 `hsinchu_beauty.mp4` 已獨立整理至 `gh-pages` 分支中，供 GitHub Pages 線上播放與下載，避免 clone `main` 分支時下載不必要的大型二進位檔案。
+> 💡 **影片媒體檔線上觀看**：高畫質影片檔已託管於 GitHub Pages 頁面，點此立即線上播放：[https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4](https://n0b0dy-is-me.github.io/ai-gen-video-demo/hsinchu_beauty.mp4)。
 
 ---
 
 ## 💬 對話歷史紀錄 (Chat History)
 
 您可以在 [CHAT_HISTORY.md](CHAT_HISTORY.md) 查閱使用者與 AI 助手從最初的需求討論、方案評估、素材下載到影片生成與專案整理的全過程對話紀錄。
-
----
-
-## 🚀 如何安裝與使用 Google Antigravity (Installation & Usage)
-
-本專案係由 **Google Antigravity (AGY)** AI Agent 自動化協作完成。若您也想使用 Antigravity 請 AI 幫您自動化剪輯影片或開發專案，請參考以下說明：
-
-### 1. 官方資源與下載連結 (Official Links)
-* 🌐 **Google Antigravity 官方網站**：[https://antigravity.google](https://antigravity.google)
-* 📖 **官方說明文件與 API 手冊**：[https://antigravity.google/docs](https://antigravity.google/docs)
-* 💻 **Antigravity CLI 命令列工具**：[https://antigravity.google/docs/cli/reference](https://antigravity.google/docs/cli/reference)
-
-### 2. 快速開始 (Quick Start)
-1. 安裝 Google Antigravity CLI 工具（`agy`）：
-   * 請至 [Antigravity 官網](https://antigravity.google) 下載對應作業系統（Linux / macOS / Windows）的 CLI 或 IDE。
-2. 啟動 Antigravity：
-   * 在 Terminal 中執行 `agy` 命令即可啟動 Agent 對話環境。
-3. 開始自動化剪輯：
-   * 複製（`git clone`）本儲存庫，在專案目錄下開啟 `agy`。
-   * 參考 [TEMPLATE.md](TEMPLATE.md) 填寫您的需求並發送給 AI，AI 助手即會自動執行素材蒐集、影片渲染與網頁生成全套流程！
 
 ---
 
