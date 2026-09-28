@@ -9,9 +9,9 @@
 當使用者發出「幫我蒐集某主題圖片並製作影片」的需求時，請依照以下 4 步驟執行：
 
 ### 步驟 1：素材蒐集 (Image & Audio Collection)
-1. 建立目標素材資料夾：`mkdir -p photos/`
+1. 建立目標素材資料夾：`mkdir -p assets/`
 2. 使用 Python urllib 搭配 **Wikimedia Commons API** 或 **Unsplash Direct URLs** 抓取高解析度照片 (建議 6 ~ 10 張)。
-3. 使用 Wikimedia Commons 搜尋並下載 CC0 / CC-BY 公眾領域背景音樂（如古典鋼琴、鋼琴輕音樂），儲存為 `photos/bgm.mp3`。
+3. 使用 Wikimedia Commons 搜尋並下載 CC0 / CC-BY 公眾領域背景音樂（如古典鋼琴、鋼琴輕音樂），儲存為 `assets/bgm.mp3`。
 
 ### 步驟 2：執行影片渲染 (Render Video)
 1. 確保系統已安裝 `python3`, `ffmpeg`, 及 `Pillow` 套件。
